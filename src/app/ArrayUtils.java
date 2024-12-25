@@ -5,10 +5,6 @@ import java.util.Arrays;
 public class ArrayUtils {
     private int[] array = {1,5,3,6,9,11,2,4,8,12,7,10};
 
-    public void setArray(int[] array) {
-        this.array = array;
-    }
-
     public int[] getArray() {
         return array;
     }
