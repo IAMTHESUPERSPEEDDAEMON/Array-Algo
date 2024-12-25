@@ -8,14 +8,15 @@ public class Main {
 
         //1 Show original array
         System.out.println("\nOriginal array");
-        ArrayUtils.getArrayOutput(array);
+        arrayUtils.getOutput(array);
         //2 Show sorted array
+        System.out.println("\nSorted array");
         int[] sortedArray = arrayUtils.mergeSort(array, 0, array.length - 1);
-        ArrayUtils.getSortOutput(sortedArray);
+        arrayUtils.getOutput(sortedArray);
 
         //2 Search array element
         System.out.println("\nSearch in array");
         int searchResult = arrayUtils.search(sortedArray, searchKey);
-        ArrayUtils.getSearchOutput(searchResult, 8);
+        arrayUtils.getSearchOutput(searchResult, 8);
     }
 }

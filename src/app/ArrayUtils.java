@@ -1,7 +1,9 @@
 package app;
 
+import java.util.Arrays;
+
 public class ArrayUtils {
-    private static int[] array = {1,5,3,6,9,11,2,4,8,12,7,10};
+    private int[] array = {1,5,3,6,9,11,2,4,8,12,7,10};
 
     public void setArray(int[] array) {
         this.array = array;
@@ -25,7 +27,7 @@ public class ArrayUtils {
         return elements;
     }
 
-    private static void merge(int[] subset, int low,
+    private void merge(int[] subset, int low,
                               int mid, int high) {
 
         int n = high - low + 1;
@@ -70,7 +72,7 @@ public class ArrayUtils {
         return -1;
     }
 
-    public static void getSearchOutput(int index, int key) {
+    public void getSearchOutput(int index, int key) {
         System.out.println("\nSearch result: \n");
         if (index == -1)
             System.out.println("Element not found");
@@ -79,19 +81,8 @@ public class ArrayUtils {
                     " found at index " + index);
     }
 
-    public static void getSortOutput(int[] array) {
-        System.out.println("Sort result: \n");
-        for (int num : array) {
-            System.out.println(" " + num);
-        }
+    public void getOutput(int[] array) {
+        System.out.println("Result: " + Arrays.toString(array));
     }
-
-    public static void getArrayOutput(int[] array) {
-        System.out.println("Array result: \n");
-        for (int num : array) {
-            System.out.println(" " + num);
-        }
-    }
-
 }
 
