@@ -3,7 +3,7 @@ package app;
 import java.util.Arrays;
 
 public class ArrayUtils {
-    private int[] array = {1,5,3,6,9,11,2,4,8,12,7,10};
+    private final int[] array = {1,5,3,6,9,11,2,4,8,12,7,10};
 
     public int[] getArray() {
         return array;
