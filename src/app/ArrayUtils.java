@@ -7,7 +7,7 @@ public class ArrayUtils {
         this.array = array;
     }
 
-    private static int[] getArray() {
+    public int[] getArray() {
         return array;
     }
 
@@ -49,7 +49,7 @@ public class ArrayUtils {
             subset[low + j] = temp[j];
     }
 
-    private static int search(int[] sortedArray, int key) {
+    public int search(int[] sortedArray, int key) {
         // Нижній (початковий) індекс
         int low = 0;
         // Верхній (кінцевий) індекс
@@ -70,8 +70,8 @@ public class ArrayUtils {
         return -1;
     }
 
-    public static void getOutput(int index, int key) {
-        System.out.println("Search result: \n");
+    public static void getSearchOutput(int index, int key) {
+        System.out.println("\nSearch result: \n");
         if (index == -1)
             System.out.println("Element not found");
         else
@@ -79,9 +79,16 @@ public class ArrayUtils {
                     " found at index " + index);
     }
 
-    public static void getArrayOutput(int[] array) {
+    public static void getSortOutput(int[] array) {
+        System.out.println("Sort result: \n");
         for (int num : array) {
-            System.out.println("Sort result: \n");
+            System.out.println(" " + num);
+        }
+    }
+
+    public static void getArrayOutput(int[] array) {
+        System.out.println("Array result: \n");
+        for (int num : array) {
             System.out.println(" " + num);
         }
     }
