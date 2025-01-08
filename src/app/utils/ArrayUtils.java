@@ -1,4 +1,7 @@
-package app;
+package app.utils;
+
+import app.interfaces.Author;
+import app.interfaces.MethodInfo;
 
 import java.util.Arrays;
 
@@ -8,7 +11,12 @@ public class ArrayUtils {
     public int[] getArray() {
         return array;
     }
-
+    @MethodInfo(
+        methodName = "mergeSort",
+        returnType = "int[]",
+        description = "used to sort array"
+    )
+    @Author
     public int[] mergeSort(int[] elements, int low, int high) {
         // Список, що містить принаймні 2 елементи
         if (low < high) {
@@ -47,6 +55,12 @@ public class ArrayUtils {
             subset[low + j] = temp[j];
     }
 
+    @MethodInfo(
+            methodName = "Search",
+            returnType = "int",
+            description = "used to search in array"
+    )
+    @Author
     public int search(int[] sortedArray, int key) {
         // Нижній (початковий) індекс
         int low = 0;
